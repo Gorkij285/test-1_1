@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+html {
+  font-size: 10px;
+  color: #2A4A5C;
+}
+
+.body {
+  position: relative;
+  padding: 50px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.button {
+  position: relative;
+  height: 3.5rem;
+  width: 20rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #e9dddd;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fb {
+  background: #255A9B;
+  margin-right: 3rem;
+  letter-spacing: 0.015em;
+}
+
+.icons-fb {
+  position: absolute;
+  height: 3rem;
+  left: 0rem;
+}
+
+.ld {
+  background: #0076B6;
+  letter-spacing: 0.015em;
+}
+
+.icons-ld {
+  position: absolute;
+  height: 3rem;
+  left: 0rem;
+}
+
+.last-button {
+  border-radius: 0.5rem;
+  background: #2da5e5;
+  letter-spacing: 0.015em;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.form {
+  height: 5rem;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.form input {
+  border: none;
+  box-shadow: 0px 5px 12px 3px rgba(2, 16, 26, 0.08);
+  border-left: 0.2rem solid transparent;
+  border-radius: 2px;
+  padding-left: 0.5rem;
+}
+.form input:focus {
+  outline: none;
+  border-left: 0.2rem solid #3da1ff;
+}
+.form__group {
+  position: relative;
+}
+.form__email {
+  height: 5rem;
+  width: 19.5rem;
+}
+.form__phone {
+  height: 5rem;
+  width: 19.5rem;
+}
+.form__label {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+span img {
+  margin-left: 0.5rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.175rem;
+}
+
+.tooltip:before,
+.tooltip:after {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  margin-bottom: 15px;
+  transition: opacity 0.7s, margin-bottom 0.7s;
+  left: 50%;
+}
+
+.tooltip {
+  color: #1f8b8a;
+  border-bottom: 1px dashed #1f8b8a;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip:before {
+  top: 4rem;
+  left: 50%;
+  padding: 10px;
+  width: 19rem;
+  margin-left: -100px;
+  color: grey;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8509803922);
+  box-shadow: 0px 5px 12px 3px rgba(2, 16, 26, 0.2);
+  content: attr(data-title);
+  border-radius: 5px;
+  box-shadow: border-box;
+  text-align: center;
+}
+
+.tooltip:after {
+  content: "";
+  bottom: 20px;
+  margin-left: -10px;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after {
+  opacity: 1;
+  margin-bottom: 0;
+  visibility: visible;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 4%;
+  background-color: #EFF6FF;
+  height: 80rem;
+  width: 110rem;
+}
+.container__left {
+  background: url(../img/bg.jpg) center/cover no-repeat;
+  height: 100%;
+  width: 65%;
+  position: relative;
+  padding-left: 2.5rem;
+  padding-top: 2rem;
+}
+.container__left-logo {
+  position: absolute;
+}
+.container__left-logo img {
+  height: 5rem;
+  width: 15rem;
+}
+.container__right {
+  background-color: #ffffff;
+  height: 100%;
+  width: 49%;
+  padding: 7rem 6rem;
+}
+.container__right-title {
+  margin-bottom: 4.5rem;
+}
+.container__right-buttons {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container__right-or {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4.5rem;
+}
+.container__right-emailAndPhone {
+  height: 5rem;
+  margin-bottom: 4.5rem;
+}
+.container__right-titleTwo {
+  margin-bottom: 2.5rem;
+}
+.container__right-programSelection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12rem;
+}
+.container__right-programSelection form {
+  display: flex;
+  flex-direction: row;
+}
+.container__right-programSelection form p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.container__right-programSelection form input {
+  margin-right: 1rem;
+}
+.container__right-checkBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.container__right-checkBox input {
+  margin-right: 0.65rem;
+}
+.container__right-checkBox p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+}
+.container__right-checkBox a {
+  color: #2296ee;
+}
+
+.margin-right-4rem {
+  margin-right: 4rem;
+}
+
+.line {
+  width: 10rem;
+  margin: auto;
+}
+.line__one {
+  margin-right: 1rem;
+}
+.line__two {
+  margin-left: 1rem;
+}/*# sourceMappingURL=style.css.map */

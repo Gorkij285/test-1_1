@@ -1,0 +1,55 @@
+span
+    img
+        margin-left: 0.5rem
+        height: 1rem
+        position: absolute
+        top: 0.175rem
+
+.tooltip:before,
+.tooltip:after 
+    display: block
+    position: absolute
+    visibility: hidden
+    opacity: 0
+    margin-bottom: 15px
+    transition: opacity .7s, margin-bottom .7s
+    left: 50%
+
+
+.tooltip 
+    color: #1f8b8a
+    border-bottom: 1px dashed #1f8b8a
+    position: relative
+    cursor: pointer
+  
+
+
+.tooltip:before 
+    top: 4rem
+    left: 50%
+    padding: 10px
+    width: 19rem
+    margin-left: -100px
+    color: grey
+    font-size: 1.2rem
+    background-color: #ffffffd9
+    box-shadow: 0px 5px 12px 3px rgba(2, 16, 26, 0.20)
+    content: attr(data-title)
+    border-radius: 5px
+    box-shadow: border-box
+    text-align: center
+
+
+.tooltip:after 
+    content: ""
+    bottom: 20px
+    margin-left: -10px
+
+
+.tooltip:hover:before,
+.tooltip:hover:after 
+    opacity: 1
+    margin-bottom: 0
+    visibility: visible
+
+        
